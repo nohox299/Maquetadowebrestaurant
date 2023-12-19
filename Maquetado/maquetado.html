@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="maquetado.css">
+</head>
+<body>
+    <div class="banner">
+        <h1>BIEVENIDO</h1>
+        <div class="nosotros">
+            <p>Nosotros</p>
+            <div class="nosotros-texto">
+                <p>Somos el restaurante "Web Carlos Vela Restaurant" comprometidos en ofrecer a nuestros clientes una experiencia gastronómica única. Nos enorgullece presentar un menú diverso y delicioso, cuidadosamente elaborado con ingredientes frescos y de alta calidad. En nuestro restaurante, nos esforzamos por hacer que la buena comida sea accesible para todos. Creemos que la calidad no debe comprometerse por el precio, por lo que nos dedicamos a proporcionar productos deliciosos a precios asequibles. Nuestro equipo de chefs talentosos trabaja arduamente para ofrecer platillos que deleiten el paladar de nuestros clientes. Desde opciones saludables hasta indulgentes, siempre encontrarás algo que se ajuste a tus gustos y preferencias. Además de nuestro compromiso con la calidad, también nos preocupamos por crear un ambiente acogedor y amigable. Queremos que te sientas como en casa cada vez que nos visites, ya sea para un almuerzo rápido o una cena especial. </p>
+            </div>
+        </div>
+        <div class="tenemos">
+            <h1>¡Tenemos</h1>
+        </div>
+        <div class="banner-productos-container" id="bannerproductosContainer">
+            <!-- Aquí se mostrarán los productos en el banner -->
+        </div>
+        <div class="muchosmas">
+            <p>y muchos más!</p>
+        </div>
+    </div>
+
+    <div class="listaproductos">
+        <h1>Productos en venta</h1>
+        <div class="productos-container" id="productosContainer">
+            <!-- Aquí se mostrará el listado de los productos -->
+        </div>
+    </div>
+
+    <div id="carritoContainer" class="carrito-container">
+        <h2>Carrito de Compras</h2>
+        <div id="productosCarritoContainer">
+        </div>
+        <div id="precioTotalContainer">
+            <p>Precio Total: $<span id="precioTotal">0.00</span></p>
+            <button id="comprarBtn">Comprar</button>
+        </div>
+    </div>
+    
+
+    <template id="template-product">
+        <div class="bannerproducto">
+            <h3 class="producto-nombre"></h3>
+        </div>
+    </template>
+
+    <template id="template-product-list">
+        <div class="producto">
+            <div class="info">
+                <h3 class="producto-nombre"></h3>
+                <p class="producto-precio"></p>
+                <button class="ver-detalles">Ver Detalles</button>
+                <button class="agregar-carrito">Agregar al Carrito</button>
+            </div>
+            <div class="detalles-producto">
+                <h2 class="detalle-titulo"></h2>
+                <p class="detalle-descripcion"></p>
+                <p class="detalle-precio"></p>
+                <p class="detalle-categoria"></p>
+                <p class="detalle-fabricante"></p>
+                <p class="detalle-existencia"></p>
+                <p class="detalle-unidad"></p>
+                <button class="agregar-carrito">Agregar al Carrito</button>
+                <button class="eliminar-carrito">Eliminar del Carrito</button>
+                <button class="cerrar-popup">Cerrar</button>
+            </div>
+        </div>
+    </template>
+
+    <template id="template-carrito-item">
+        <div class="producto">
+            <div class="info">
+                <h3 class="producto-nombre"></h3>
+                <p class="producto-precio"></p>
+                <button class="ver-detalles">Ver Detalles</button>
+                <button class="eliminar-carrito">Eliminar del Carrito</button>
+            </div>
+            <div class="detalles-producto">
+                <h2 class="detalle-titulo"></h2>
+                <p class="detalle-descripcion"></p>
+                <p class="detalle-precio"></p>
+                <p class="detalle-categoria"></p>
+                <p class="detalle-fabricante"></p>
+                <p class="detalle-existencia"></p>
+                <p class="detalle-unidad"></p>
+                <button class="ver-detalles">Ver Detalles</button>
+                <button class="cerrar-popup">Cerrar</button>
+            </div>
+        </div>
+    </template>
+
+</body>
+<script src="maquetado.js"></script>
+</html>
